@@ -197,7 +197,7 @@ CurrencyInputPanelProps) {
     setModalOpen(false)
   }, [setModalOpen])
 
-  const displayMaxButton = connectedAddress && currency && showMaxButton && label !== 'To';
+  const displayMaxButton = connectedAddress && currency && showMaxButton && label !== 'To'
 
   return (
     <InputPanel id={id}>
@@ -285,9 +285,7 @@ CurrencyInputPanelProps) {
                 style={displayMaxButton ? { paddingRight: '60px' } : { paddingRight: '12px' }}
                 disabled={disableInput}
               />
-              {displayMaxButton && (
-                <StyledBalanceMax onClick={onMax}>MAX</StyledBalanceMax>
-              )}
+              {displayMaxButton && <StyledBalanceMax onClick={onMax}>MAX</StyledBalanceMax>}
             </>
           )}
         </InputRow>
